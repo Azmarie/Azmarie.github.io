@@ -15,8 +15,8 @@ gulp.task('webserver',function(){
     });
 })
 
-gulp.task('default',['webserver']);
-// 链接：https://www.jianshu.com/p/e66a5bb96b7e
+// gulp.task('default',['webserver']);
+// // 链接：https://www.jianshu.com/p/e66a5bb96b7e
 
 gulp.task('scripts', function() {
     return gulp.src('js/scripts.js')
@@ -42,7 +42,7 @@ gulp.task('styles', function () {
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('watch', ['scripts', 'styles'], function() {
+gulp.task('watch', ['scripts', 'styles','webserver'], function() {
     gulp.watch('js/*.js', ['scripts']);
     gulp.watch('scss/*.scss', ['styles']);
 });

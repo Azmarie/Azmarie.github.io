@@ -34,8 +34,8 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
-$base-color-hover: darken($base-color, 10%);
+$base-color: #b6e7a6;
+$base-color-hover: darken($base-color, 0%);
 
 // Define background colors
 $background: #fff;
@@ -154,7 +154,7 @@ header {
 
     ul {
         display: inline-block;
-        background: $background;
+        // background: $background;
         text-align: center;
         padding: 10px;
         margin: 0;
@@ -169,11 +169,11 @@ header {
 
     a {
         display: block;
-        color: $base-color;
+        color: $background;
         padding: 10px;
 
         &:hover {
-            color: $base-color-hover;
+            color: #1a4f13;
             text-decoration: none;
             background: #eee;
             border-radius: 4px;
@@ -353,6 +353,7 @@ footer {
     max-height: 1080px;
     background: url(../images/lead-bg.jpg);
     background-size: cover;
+    // background-repeat: no-repeat;
     padding: 15px;
     overflow: hidden;
 }
@@ -360,10 +361,10 @@ footer {
 #lead-content {
     position: absolute;
     z-index: 10;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    // text-align: center;
 
     h1, h2 {
         margin: 0;
