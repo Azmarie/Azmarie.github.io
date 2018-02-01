@@ -203,7 +203,7 @@ header {
 }
 
 footer {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .copyright {
@@ -442,30 +442,6 @@ footer {
 
 }
 
-@media only screen and (max-width : 1024px) {
-    #about {
-        padding: 10px;
-        min-height: 1000px;
-
-    }
-    .about-info {
-        text-align: center;
-        display: block;
-        margin: 400px 20px 20px 20px;
-    }
-}
-
-@media only screen and (max-width : 767px) {
-    #about {
-        min-height: 1400px;
-        padding: 20px;
-    }
-    .about-info {
-        text-align: center;
-        display: block;
-        margin: 550px 20px 20px 20px;
-    }
-}
 /*
     --------------------------------
     ----- 6. Experience Styles -----
@@ -848,81 +824,42 @@ footer {
     -----------------------------
 */
 
-// Collapse timeline
-@media only screen and (max-width: 750px) {
-
-    #experience-timeline {
-        &:before, &:after {
-            left: 23px;
-        }
-
-    }
-
-    .vtimeline-date {
-        width: auto;
-        text-align: left;
-        position: relative;
-        margin-bottom: 15px;
-        display: block;
-        margin-left: 70px;
-    }
-
-    .vtimeline-icon {
-        margin-left: 0;
-    }
-
-    .vtimeline-content {
-        margin-left: 70px;
-    }
-
-}
-
 // Medium Devices
 @media only screen and (max-width : 992px) {
 
+    #about {
+        padding: 10px;
+        min-height: 1000px;
+        text-align: center;
+    }
+    .about-info {
+        text-align: center;
+        display: block;
+        margin: 400px 20px 20px 20px;
+    }
     #lead {
         height: auto;
-        min-height: auto;
-        max-height: auto;
+        min-height: 200px;
         padding: 100px 15px;
     }
-
-    #contact{
-        padding: 15px;
-        
-    }
-    #contact-form{
-        height: auto; 
-    }
-    #lead-content {
-        position: relative;
-        transform: none;
-        left: auto;
-        top: auto;
-
-        h1 {
-            font-size: 3em;
-        }
-
-        h2 {
-            font-size: 1.75em;
-        }
-    }
-
-    #about {
-        text-align: center;
-
-        p {
-            text-align: left;
-        }
+    footer {
+        padding: 10px 0;
     }
 
 }
-
 
 // Small Devices
 @media only screen and (max-width : 768px) {
 
+    #about {
+        min-height: 1400px;
+        padding: 50px;
+    }
+    .about-info {
+        text-align: center;
+        display: block;
+        margin: 550px 20px 20px 20px;
+    }
     header {
         position: fixed;
         display: none;
@@ -931,10 +868,7 @@ footer {
         bottom: 0;
         height: 100%;
     }
-    #contact{
-        padding: 15px;
-        
-    }
+
     #mobile-menu-open, #mobile-menu-close {
         display: block;
     }
@@ -952,30 +886,12 @@ footer {
         }
     }
 
-    #lead-content {
-        h1 {
-            font-size: 2em;
-        }
-
-        h2 {
-            font-size: 1.3em;
-        }
-
-        a {
-            padding: 10px 20px;
-        }
+    #lead {
+        height: auto;
+        min-height: 200px;
+//        max-height: auto;
+        padding: 100px 15px;
     }
-
-    #lead-down {
-        display: none;
-    }
-
-    .education-block {
-        h3, span {
-            float: none;
-        }
-    }
-
     .project-image {
         display: none;
     }
@@ -990,6 +906,7 @@ footer {
 
     footer {
         text-align: center;
+        padding: 10px 0;
     }
 
     .social {
@@ -997,25 +914,19 @@ footer {
     }
 
 }
+
 // Extra Small Devices
 @media only screen and (max-width : 480px) {
-    #contact{
-        padding: 15px;
-        
+
+    #lead {
+        height: auto;
+        min-height: 200px;
+//        max-height: auto;
+        padding: 100px 15px;
     }
-    #lead-content {
-        h1 {
-            font-size: 1.5em;
-        }
-
-        h2 {
-            font-size: 1em;
-        }
-
-        a {
-            font-size: 0.9em;
-            padding: 5px 10px;
-        }
+    footer {
+        text-align: center;
+        padding: 10px 0;
     }
 
 }
@@ -1125,7 +1036,7 @@ footer {
 
 .postcard img{
     width: 500px;
-    height: 240px;
+    height: 300px;
     display: inline-block;
 }
 
@@ -1146,13 +1057,3 @@ footer {
     background-color: transparent !important;
 }
 
-
-@media(max-width: 768px) {
-    body {
-        padding: 0;
-    }
-
-    .container.gallery-container {
-        border-radius: 0;
-    }
-}
