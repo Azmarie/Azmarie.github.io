@@ -1,37 +1,3 @@
-/*!
-    Title: Dev Portfolio Template
-    Version: 1.2.1
-    Last Change: 08/28/2017
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
-
-    Description: This file contains all the styles associated with the page
-    that don't come from third party libraries. This file gets compiled using
-    Gulp and send to the /css folder which is then loaded on the page.
-*/
-/*
-    File Contents:
-
-        1. Variables
-        2. Mixins
-        3. Global Styles
-        4. Lead Styles
-        5. About Styles
-        6. Experience Styles
-        7. Education Styles
-        8. Project Styles
-        9. Skills Styles
-        10. Contact Styles
-        11. Optional Section Styles
-        12. Media Queries
-*/
-
-/*
-    ------------------------
-    ----- 1. Variables -----
-    ------------------------
-*/
 
 // Define base and accent colors
 $base-color: #b6e7a6;
@@ -450,17 +416,30 @@ footer {
 #about {
     padding: 75px 15px;
     border-bottom: 1px solid $border;
+}
 
-    h2 {
+.about-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 400px;
+    margin-top: 10px;
+
+    h3 {
+        font-size: 1.2em;
+        font-weight: 300;
+        line-height: 1.5em;
         color: $heading;
+        margin-bottom: 150px;
+        margin-right: 40px;
     }
 
     p {
         color: $text;
-        margin: 0;
+        margin: 0 0 15px 0;
+        font-size: 0.9em;
     }
 }
-
 /*
     --------------------------------
     ----- 6. Experience Styles -----
@@ -1008,177 +987,137 @@ footer {
     -------------------------------
 */
 
-// #gallery {
-//     padding: 50px 15px;
-//     border-bottom: 1px solid $border;
-//     text-align: center;
-//
-//     h2 {
-//         color: $heading;
-//         margin-bottom: 50px;
-//     }
-// }
+#gallery {
+//    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+    min-height: 100vh;
+    padding: 60px 0;
+}
 
-// body {
-//   background-color: #222222;
-// }
-#photos {
-  background-color: #222222;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+#gallery-option {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 0.75s;
+
+    ul {
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        width: 100%;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        display: inline;
+        margin: 20px;
+        font-size: 24px;
+        color:black;
+        &:hover {
+            color: lightyellow;
+            text-decoration: none;
+            background-color: darkblue;
+            border-radius: 4px;
+        }
+
+        &:focus {
+            text-decoration: none;
+        }
+    }
+
+    &.active {
+        display: block;
+    }
+
+    &.sticky {
+        position: fixed;
+        z-index: 999;
+    }
 }
-.m-p-g__thumbs-img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: solid;
-  border-color: #191919;
-  border-width: 3px;
-  border-radius: 20px;
-  width: 350px;
-  height: 350px;
-  object-fit: cover;
-  margin: 10px;
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
 }
-.m-p-g__thumbs-img.active {
-  z-index: 50;
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
 }
-.m-p-g__thumbs-img.layout-completed {
-  opacity: 1;
+
+.gallery-container p.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;
+    color: #888;
+    font-size: 18px;
 }
-.m-p-g__thumbs-img.hide {
-  opacity: 0;
+
+.tz-gallery {
+    padding: 25px;
+    margin:10px;
+    display: inline-block;
 }
-.m-p-g__thumbs-img:hover {
-  filter: brightness(110%);
+
+.tz-gallery .lightbox img {
+    width: 350px;
+    height: 240px;
 }
-.m-p-g__fullscreen {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100vh;
-  background: transparent;
-  visibility: hidden;
-  transition: background 0.25s ease-out, visibility 0.01s 0.5s linear;
-  will-change: background, visibility;
-  backface-visibility: hidden;
+
+.tz-gallery .portrait img {
+    width: 280px;
+    height: 390px;
 }
-.m-p-g__fullscreen.active {
-  transition: background .25s ease-out, visibility .01s 0s linear;
-  visibility: visible;
-  background: rgba(0, 0, 0, 0.95);
+.tz-gallery .vfw img {
+    width: 350px;
+    height: 500px;
 }
-.m-p-g__fullscreen-img {
-  pointer-events: none;
-  position: absolute;
-  transform-origin: left top;
-  top: 50%;
-  left: 50%;
-  max-height: 100vh;
-  max-width: 100%;
-  visibility: hidden;
-  will-change: visibility;
-  transition: opacity 0.5s ease-out;
+
+.postcard img{
+    width: 500px;
+    height: 240;
+    display: inline-block;
 }
-.m-p-g__fullscreen-img.active {
-  visibility: visible;
-  opacity: 1 !important;
-  transition: opacity 0.5s ease-out, -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.5s ease-out;
+
+
+.tz-gallery img {
+    border-radius: 4px;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
 }
-.m-p-g__fullscreen-img.almost-active {
-  opacity: 0;
-  transform: translate3d(0, 0, 0) !important;
+
+.tz-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
 }
-.m-p-g__controls {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 200;
-  height: 20vh;
-  background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.55) 100%);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+
+.baguetteBox-button {
+    background-color: transparent !important;
 }
-.m-p-g__controls.active {
-  opacity: 1;
-  visibility: visible;
-}
-.m-p-g__controls-close, .m-p-g__controls-arrow {
-  appearance: none;
-  border: none;
-  background: none;
-}
-.m-p-g__controls-close:focus, .m-p-g__controls-arrow:focus {
-  outline: none;
-}
-.m-p-g__controls-arrow {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  width: 20%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  opacity: 0;
-}
-.m-p-g__controls-arrow:hover {
-  opacity: 1;
-}
-.m-p-g__controls-arrow--prev {
-  left: 0;
-  padding-left: 3vw;
-  justify-content: flex-start;
-}
-.m-p-g__controls-arrow--next {
-  right: 0;
-  padding-right: 3vw;
-  justify-content: flex-end;
-}
-.m-p-g__controls-close {
-  position: absolute;
-  top: 3vh;
-  left: 3vw;
-  z-index: 5;
-  cursor: pointer;
-}
-.m-p-g__btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.07);
-  transition: all .25s ease-out;
-}
-.m-p-g__btn:hover {
-  background: rgba(255, 255, 255, 0.15);
-}
-.m-p-g__alertBox {
-  position: fixed;
-  z-index: 999;
-  max-width: 700px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: white;
-  padding: 25px;
-  border-radius: 3px;
-  text-align: center;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
-  color: grey;
-}
-.m-p-g__alertBox h2 {
-  color: red;
+
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
 }
