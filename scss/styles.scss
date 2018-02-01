@@ -414,7 +414,7 @@ footer {
 */
 
 #about {
-    padding: 75px 15px;
+    padding: 120px 15px;
     border-bottom: 1px solid $border;
 }
 
@@ -424,6 +424,7 @@ footer {
     transform: translateY(-50%);
     margin-left: 400px;
     margin-top: 10px;
+    display: block;
 
     h3 {
         font-size: 1.2em;
@@ -434,10 +435,17 @@ footer {
         margin-right: 40px;
     }
 
-    p {
-        color: $text;
-        margin: 0 0 15px 0;
-        font-size: 0.9em;
+}
+
+@media only screen and (max-width : 1024px) {
+    #about {
+        min-height: 1200px;
+        padding: 20px;
+    }
+    .about-info {
+        text-align: center;
+        display: block;
+        margin: 400px 20px 20px 20px;
     }
 }
 /*
@@ -1030,10 +1038,6 @@ footer {
             background-color: darkblue;
             border-radius: 4px;
         }
-
-        &:focus {
-            text-decoration: none;
-        }
     }
 
     &.active {
@@ -1085,7 +1089,7 @@ footer {
 }
 .tz-gallery .vfw img {
     width: 350px;
-    height: 500px;
+    height: 495px;
 }
 
 .postcard img{
