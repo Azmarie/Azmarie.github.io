@@ -880,6 +880,35 @@ footer {
 // Medium Devices
 @media only screen and (max-width : 992px) {
 
+    #lead {
+        height: auto;
+        min-height: auto;
+        max-height: auto;
+        padding: 100px 15px;
+    }
+
+    #contact{
+        padding: 15px;
+        
+    }
+    #contact-form{
+        height: auto; 
+    }
+    #lead-content {
+        position: relative;
+        transform: none;
+        left: auto;
+        top: auto;
+
+        h1 {
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 1.75em;
+        }
+    }
+
     #about {
         text-align: center;
 
@@ -889,6 +918,7 @@ footer {
     }
 
 }
+
 
 // Small Devices
 @media only screen and (max-width : 768px) {
@@ -901,7 +931,10 @@ footer {
         bottom: 0;
         height: 100%;
     }
-
+    #contact{
+        padding: 15px;
+        
+    }
     #mobile-menu-open, #mobile-menu-close {
         display: block;
     }
@@ -964,10 +997,12 @@ footer {
     }
 
 }
-
 // Extra Small Devices
 @media only screen and (max-width : 480px) {
-
+    #contact{
+        padding: 15px;
+        
+    }
     #lead-content {
         h1 {
             font-size: 1.5em;
