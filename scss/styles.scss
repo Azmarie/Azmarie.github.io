@@ -873,7 +873,7 @@ footer {
     }
 
     #menu {
-        height: 100%;
+        background-color:darken($base-color,45%);
         overflow-y: auto;
         box-shadow: none;
         border-radius: 0;
