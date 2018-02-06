@@ -16,7 +16,7 @@ $text: #74808a;
 
 /*
     ---------------------
-    ----- 2. Mixins -----
+    ----- Mixins -----
     ---------------------
 */
 
@@ -46,7 +46,7 @@ $text: #74808a;
 
 /*
     ----------------------------
-    ----- 3. Global Styles -----
+    ----- Global Styles -----
     ----------------------------
 */
 
@@ -308,7 +308,7 @@ footer {
 
 /*
     --------------------------
-    ----- 4. Lead Styles -----
+    ----- Lead Styles -----
     --------------------------
 */
 
@@ -408,7 +408,7 @@ footer {
 
 /*
     ---------------------------
-    ----- 5. About Styles -----
+    ----- About Styles -----
     ---------------------------
 */
 
@@ -441,175 +441,56 @@ footer {
     }
 
 }
-
 /*
-    --------------------------------
-    ----- 6. Experience Styles -----
-    --------------------------------
+    ---------------------------
+    ----- Blog Styles -----
+    ---------------------------
 */
-
-#experience {
-    padding: 50px 15px;
-    text-align: center;
-    border-bottom: 1px solid $border;
-
-    h2 {
-        color: $heading;
-    }
+#blog {
+    background-color: #161620;
 }
 
-#experience-timeline {
-    margin: 30px auto 0 auto;
-    position: relative;
-    max-width: 1000px;
-
-    &:before {
-        position: absolute;
-        content: '';
-        top: 0;
-        bottom: 0;
-        left: 303px;
-        right: auto;
-        height: 100%;
-        width: 3px;
-        background: $base-color;
-        z-index: 0;
-    }
-
-    &:after {
-        position: absolute;
-        content: '';
-        width: 3px;
-        height: 40px;
-        background: $base-color;
-        background: linear-gradient(to bottom, $base-color, rgba($base-color, 0));
-        top: 100%;
-        left: 303px;
-    }
+.coming-soon {
+  color: #fff;
+  font-family: 'Futura';
+  font-size: 4em;
+  left: 50%;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
 }
 
-.vtimeline-content {
-    margin-left: 350px;
-    background: #fff;
-    border: 1px solid #e6e6e6;
-    padding: 15px;
-    border-radius: 3px;
-    text-align: left;
-
-    h3 {
-        font-size: 1.5em;
-        font-weight: 300;
-        color: $heading;
-        display: inline-block;
-        margin: 0;
-    }
-
-    h4 {
-        font-size: 1.2em;
-        font-weight: 300;
-        color: #7e8890;
-        margin: 0 0 15px 0;
-    }
-
-    p {
-        color: $text;
-        font-size: 0.9em;
-        margin: 0;
-    }
+.coming-soon p{
+    color:beige;
+    text-transform: none;
+    font-size: 24px;
 }
 
-.vtimeline-point {
-    position: relative;
-    display: block;
-    vertical-align: top;
-    margin-bottom: 30px;
+.text-letter {
+  text-shadow: 0 0 2px white,
+    0 0 1px white,
+    1px 0 10px red,
+    -1px 0 10px cyan;
 }
 
-.vtimeline-icon {
-    position: relative;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    background: $base-color;
-    border-radius: 50%;
-    float: left;
-    z-index: 99;
-    margin-left: 280px;
-
-    i {
-        display: block;
-        font-size: 2em;
-        margin-top: 10px;
-    }
+#blog .text-letter:nth-of-type(2), .text-letter:nth-of-type(4) {
+   text-shadow: 0 0 2px white,
+     0 0 1px white,
+     2px 0 10px red,
+     -2px 0 10px cyan;
 }
 
-.vtimeline-date {
-    width: 260px;
-    text-align: right;
-    position: absolute;
-    left: 0;
-    top: 10px;
-    font-weight: 300;
-    color: #374054;
+#blog .text-letter:nth-of-type(1), .text-letter:nth-of-type(5) {
+   text-shadow: 0 0 2px white,
+     0 0 1px white,
+     4px 0 10px red,
+     -4px 0 10px cyan;
 }
 
 /*
     -------------------------------
-    ----- 7. Education Styles -----
-    -------------------------------
-*/
-
-#education {
-    padding: 50px 15px 20px 15px;
-    border-bottom: 1px solid $border;
-    text-align: center;
-
-    h2 {
-        color: $heading;
-        margin-bottom: 50px;
-    }
-}
-
-.education-block {
-    max-width: 700px;
-    margin: 0 auto 30px auto;
-    padding: 15px;
-    border: 1px solid $border;
-    text-align: left;
-
-    h3 {
-        font-weight: 500;
-        float: left;
-        margin: 0;
-        color: $heading;
-    }
-
-    span {
-        color: $text;
-        float: right;
-    }
-
-    h4 {
-        color: $text;
-        clear: both;
-        font-weight: 500;
-        margin: 0 0 15px 0;
-    }
-
-    p, ul {
-        margin: 0;
-        color: $text;
-        font-size: 0.9em;
-    }
-
-    ul {
-        padding: 0 0 0 15px;
-    }
-}
-
-/*
-    -------------------------------
-    ----- 8. Project Styles -----
+    -----  Project Styles -----
     -------------------------------
 */
 
@@ -671,43 +552,10 @@ footer {
     display: none;
 }
 
-/*
-    -------------------------------
-    ----- 9. Skills Styles -----
-    -------------------------------
-*/
-
-#skills {
-    padding: 50px 15px;
-    text-align: center;
-
-    h2 {
-        color: $heading;
-        margin-bottom: 50px;
-    }
-
-    ul {
-        display: block;
-        margin: 0 auto;
-        padding: 0;
-        max-width: 800px;
-    }
-
-    li {
-        display: inline-block;
-        margin: 7px;
-        padding: 5px 10px;
-        color: $heading;
-        background: darken($background-alt, 5%);
-        list-style: none;
-        cursor: default;
-        font-size: 1.2em;
-    }
-}
 
 /*
     -------------------------------
-    ----- 10. Contact Styles -----
+    ----- Contact Styles -----
     -------------------------------
 */
 
@@ -771,56 +619,8 @@ footer {
 }
 
 /*
-    ---------------------------------------
-    ----- 11. Optional Section Styles -----
-    ---------------------------------------
-*/
-
-.optional-section {
-    padding: 50px 15px;
-    text-align: center;
-    border-top: 1px solid $border;
-
-    h2 {
-        color: $heading;
-    }
-}
-
-.optional-section-block {
-    max-width: 700px;
-    margin: 0 auto 30px auto;
-    padding: 15px;
-    border: 1px solid $border;
-    background: #fff;
-    text-align: left;
-
-    h3 {
-        font-weight: 500;
-        margin: 0 0 15px 0;
-        color: $heading;
-    }
-
-    h4 {
-        color: $text;
-        clear: both;
-        font-weight: 500;
-        margin: 0 0 15px 0;
-    }
-
-    p, ul {
-        margin: 0 0 15px 0;
-        color: $text;
-        font-size: 0.9em;
-    }
-
-    ul {
-        padding: 0 0 0 15px;
-    }
-}
-
-/*
     -----------------------------
-    ----- 12. Media Queries -----
+    ----- Media Queries -----
     -----------------------------
 */
 
@@ -936,9 +736,7 @@ footer {
 */
 
 #gallery {
-//    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
-    min-height: 100vh;
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 #gallery-option {
@@ -952,42 +750,20 @@ footer {
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-duration: 0.75s;
-
-    ul {
-        display: inline-block;
-        text-align: center;
-        padding: 10px;
-        margin: 0;
-        width: 100%;
-        border-bottom-right-radius: 4px;
-        border-bottom-left-radius: 4px;
-    }
-
-    li {
-        display: inline-block;
-    }
-
+    
     a {
         display: inline;
         margin: 20px;
         font-size: 24px;
         color:black;
         &:hover {
-            color: lightyellow;
+            color: white;
             text-decoration: none;
-            background-color: darkblue;
-            border-radius: 4px;
+            background-color: black;
+            transition: 0.4s;
         }
     }
 
-    &.active {
-        display: block;
-    }
-
-    &.sticky {
-        position: fixed;
-        z-index: 999;
-    }
 }
 .container.gallery-container {
     background-color: #fff;
