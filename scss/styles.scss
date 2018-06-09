@@ -62,41 +62,41 @@ body {
 }
 
 // No JS styles
-.no-js {
-  #experience-timeline {
-    > div {
-      background: $background;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid $border;
-
-      h3 {
-        font-size: 1.5em;
-        font-weight: 300;
-        color: $heading;
-        display: inline-block;
-        margin: 0;
-      }
-
-      h4 {
-        font-size: 1.2em;
-        font-weight: 300;
-        color: #7e8890;
-        margin: 0 0 15px 0;
-      }
-
-      p {
-        color: $text;
-        font-size: 0.9em;
-        margin: 0;
-      }
-    }
-
-    &:before, &:after {
-      content: none;
-    }
-  }
-}
+// .no-js {
+//   #experience-timeline {
+//     > div {
+//       background: $background;
+//       padding: 10px;
+//       margin-bottom: 10px;
+//       border: 1px solid $border;
+//
+//       h3 {
+//         font-size: 1.5em;
+//         font-weight: 300;
+//         color: $heading;
+//         display: inline-block;
+//         margin: 0;
+//       }
+//
+//       h4 {
+//         font-size: 1.2em;
+//         font-weight: 300;
+//         color: #7e8890;
+//         margin: 0 0 15px 0;
+//       }
+//
+//       p {
+//         color: $text;
+//         font-size: 0.9em;
+//         margin: 0;
+//       }
+//     }
+//
+//     &:before, &:after {
+//       content: none;
+//     }
+//   }
+// }
 
 @keyframes dropHeader {
   0% {
@@ -578,18 +578,18 @@ footer {
   // margin: 0;
 }
 .portfolio-item .caption {
-  -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+  -webkit-transition: -webkit-clip-path 0.5s ease-out, background-color 0.7s;
   -webkit-clip-path: inset(0px);
   clip-path: inset(0px);
 }
 .portfolio-item .caption .caption-content {
-  transition: opacity 0.25s;
+  transition: opacity 0.5s;
   margin-left: 5rem;
   margin-right: 5rem;
   margin-bottom: 5rem;
 }
 .portfolio-item img {
-  -webkit-transition: -webkit-clip-path 0.25s ease-out;
+  -webkit-transition: -webkit-clip-path 0.5s ease-out;
   -webkit-clip-path: inset(-1px);
   clip-path: inset(-1px);
 }
@@ -618,6 +618,17 @@ footer {
 //   font-size: 1.2em;
 //   background-color: #fffb;
 // }
+
+.showonhover a{
+  display: block;
+  color:#777;
+  // background: rgba(255,255,255,0.4);
+  &:hover {
+    text-decoration: none;
+    color: #333;
+    background: rgba(222,232,235,0.9);
+  }
+}
 
 .portfolio-item .newsrepo:hover {
   background: url(../images/newsrepo.png);
