@@ -15,9 +15,6 @@ gulp.task('webserver',function(){
     });
 })
 
-// gulp.task('default',['webserver']);
-// // 链接：https://www.jianshu.com/p/e66a5bb96b7e
-
 gulp.task('scripts', function() {
     return gulp.src('js/scripts.js')
         .pipe(plumber(plumber({

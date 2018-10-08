@@ -61,6 +61,9 @@ body {
   }
 }
 
+.aria-hidden {
+  display: none;
+}
 // No JS styles
 // .no-js {
 //   #experience-timeline {
@@ -133,7 +136,6 @@ header {
   li {
     display: inline-block;
   }
-  // a:not(.active) {
 
   a {
     display: block;
@@ -177,13 +179,12 @@ header {
       z-index: 999;
     }
   }
-}
 
-#menu {
   &.active {
     display: block;
   }
 }
+
 
 #mobile-menu-open {
   display: none;
@@ -785,11 +786,6 @@ footer {
 // Medium Devices
 @media only screen and (max-width : 992px) {
 
-  #about {
-    padding: 10px;
-    min-height: 1000px;
-    text-align: center;
-  }
   .about-info {
     text-align: center;
     display: block;
@@ -797,7 +793,7 @@ footer {
   }
   #lead {
     height: auto;
-    min-height: 200px;
+    // min-height: 200px;
     padding: 100px 15px;
   }
   footer {
@@ -809,9 +805,6 @@ footer {
 // Small Devices
 @media only screen and (max-width : 768px) {
 
-  #about {
-    min-height: 1400px;
-  }
   .about-info {
     text-align: center;
     display: block;
@@ -858,6 +851,15 @@ footer {
     text-align: center;
   }
 
+  .top, #lead-down{
+    display: none;
+  }
+
+  .aria-hidden {
+    margin-top: 5%;
+    display: block;
+  }
+
 }
 
 // Extra Small Devices
@@ -866,7 +868,6 @@ footer {
   #lead {
     height: auto;
     min-height: 200px;
-    //        max-height: auto;
     padding: 100px 15px;
   }
   footer {
