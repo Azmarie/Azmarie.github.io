@@ -473,10 +473,6 @@ footer {
   }
 }
 
-#more-projects {
-  display: none;
-}
-
 /*
 -------------------------------
 ----- Contact Styles -----
@@ -564,19 +560,22 @@ footer {
 // Small Devices
 @media only screen and (max-width : 768px) {
 
+  #lead {
+    display: none;
+  }
+
   .about-info {
     display: block;
     margin: 550px 20px 20px 20px;
     text-align: center;
   }
-  header {
-    animation: none;
 
-    bottom: 0;
-    display: none;
-    height: 100%;
-    position: fixed;
-    z-index: 999;
+  header {
+    padding-top: 10%;
+    #header-text a{
+      color: $base-color-text;
+
+    }
   }
 
   #mobile-menu-open, #mobile-menu-close {
