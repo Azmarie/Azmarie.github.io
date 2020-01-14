@@ -332,7 +332,8 @@ footer {
 
 .project-logo {
   margin-bottom: 5%;
-  width:40%;
+  width:50%;
+  // max-width: 200px;
 }
 
 .portfolio-item {
@@ -381,8 +382,8 @@ footer {
 }
 .portfolio-item .caption .caption-content {
   margin-bottom: 5rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 25%;
+  margin-right: 25%;
   transition: opacity 0.5s;
 }
 .portfolio-item img {
@@ -431,10 +432,9 @@ footer {
 
 }
 
-.portfolio-item .studygroup:hover {
-  background: url(../images/studygroup.png);
+.portfolio-item .unitygame:hover {
+  background: url(../images/unitygame.png);
   background-size: cover;
-
 }
 
 .portfolio-item .lumohacks:hover {
