@@ -81,8 +81,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `no.lol`,
-        short_name: `no.lol`,
+        name: `Azmarie Wangl`,
+        short_name: `Azmarie Wangl`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ff7a60`,
