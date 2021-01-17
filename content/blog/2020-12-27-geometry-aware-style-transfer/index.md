@@ -7,6 +7,7 @@ date: "2020-12-27T20:29:57.498Z"
 categories:
   - Computer Vision
   - Computational Creativity
+  - Personal Project with Code
 keywords:
   - Computer Vision
   - Computational Creativity

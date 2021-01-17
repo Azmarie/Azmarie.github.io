@@ -44,7 +44,7 @@ const MainBio: React.FunctionComponent<unknown> = () => {
                 <span role="img" aria-label="woman technologist">
                   👩🏻‍💻
                 </span>{' '}
-                Hello, it's Azmarie, a software engineer and computer vision enthusiastic{' '}
+                Hello, it's Azmarie, a software engineer and computer vision enthusiast{' '}
                 <span role="img" aria-label="sparkles">
                   ✨
                 </span>
@@ -66,7 +66,8 @@ const MainBio: React.FunctionComponent<unknown> = () => {
                 ))}
               </ul>
               <p>
-                I&apos;m a Software Engineer at Salesforce, 
+                I&apos;m a Software Engineer,
+                {/* at Salesforce,  */}
                 {' '}
                 <span role="img" aria-label="coffee">
                   ☕️

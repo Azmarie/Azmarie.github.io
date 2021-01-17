@@ -7,6 +7,7 @@ date: "2020-03-24T04:15:24.915Z"
 categories:
   - Computer Vision
   - Computational Creativity
+  - Personal Project with Code
 keywords:
   - Hairstyle
   - GAN
@@ -17,8 +18,7 @@ keywords:
   - Computational Creativity
 published: true
 cover: ./teaser.jpeg
-# coverAuthor: Azmarie Wang
-# coverOriginalUrl: https://unsplash.com/photos/q1-dAZuhs7I
+
 ---
 
 📖 For report and analysis, check out [my article on Medium](https://medium.com/swlh/hairstyle-transfer-semantic-editing-gan-latent-code-b3a6ccf91e82)
